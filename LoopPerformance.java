@@ -12,7 +12,7 @@ public class LoopPerformance {
 		long end = System.nanoTime();
 		long postIncrementTime=end-start;
 		
-		System.out.printf(dummyNum +" terations with i++ took: %,35d\n", postIncrementTime);
+		System.out.printf(dummyNum +" iterations with i++ took: %,35d\n", postIncrementTime);
 		
 		
 		dummyNum= 0;
@@ -23,7 +23,7 @@ public class LoopPerformance {
 		end = System.nanoTime();
 		long preIncrementTime=end-start;
 		
-		System.out.printf(dummyNum +" terations with ++i took: %,35d\n", preIncrementTime);
+		System.out.printf(dummyNum +" iterations with ++i took: %,35d\n", preIncrementTime);
 		
 		System.out.printf("Difference (post - pre): %,d  nanoseconds\n", (postIncrementTime-preIncrementTime));
 	}
